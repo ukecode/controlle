@@ -1,2 +1,2 @@
-# controlle
-Aplicação para gerenciar gastos pessoas
+# Controlle
+Aplicação para gerenciar gastos pessoais
