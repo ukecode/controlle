@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+def paginaInicial(request):
+    return render(request, 'core/home.html')
