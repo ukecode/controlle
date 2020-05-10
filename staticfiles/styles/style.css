@@ -1,0 +1,96 @@
+html, body {
+	margin: 0;
+	padding: 0 0;
+	font-family: Arial;
+	font-size: 14px;
+	background-color: #F1FAEE;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.header {
+	padding: 8px 0;
+}
+
+.header #logo h3 {
+	color: #00614C;
+}
+
+.header .menu {
+	margin: -40px 0;
+	float: right;
+}
+
+.header .menu li {
+	display: inline-block;
+	padding: 8px 5px;
+	border: 1px solid #D5D7D6;
+	border-radius: 3px;
+}
+
+.header .menu a {
+	padding: 8px 8px;
+	text-decoration: none;
+	color: #2F3E46;
+}
+
+.header .menu li:hover{
+	background: #F5CB5C;
+	transition: 0.3s;
+}
+
+.box {
+	margin-top: 6%;
+	margin-bottom: 6%;
+	background-image: url('images/undraw_online_payments_luau.svg'); background-repeat: no-repeat;
+	background-size: 450px 450px;
+	background-position: 95%;
+	height: 450px;
+}
+
+.box #description {
+	width: 50%;
+	padding: 70px 0;
+}
+
+.box #description h1 {
+	color: #2F3E46;
+	text-align: center;
+}
+
+.box #description p {
+	font-size: 20px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	color: #293241;
+}
+
+.background-img {
+	height: 450px;
+	background-image: url('images/bg.jpg');
+	margin-bottom: 6%;
+	margin-top: 6%;
+	position: absolute;
+	width: 100%;
+}
+
+.grid-box {
+	background-color: #fff;
+    width: 20%;
+    padding: 10px 20px;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: #9c9c9c 0px 0px 15px 2px;
+    text-align: justify;
+    display: inline-block;
+    margin-left: 7%;
+}
+
+.grid-box h3 {
+	text-align: center;
+	color: #2E2E2E;
+}
