@@ -72,9 +72,7 @@ html, body {
 .background-img {
 	height: 450px;
 	background-image: url('https://controlle-finance.herokuapp.com/static/images/bg.jpg');
-	margin-bottom: 6%;
-	margin-top: 6%;
-	position: absolute;
+
 	width: 100%;
 }
 
@@ -98,4 +96,27 @@ html, body {
 .grid-box h3 {
 	text-align: center;
 	color: #2E2E2E;
+}
+
+.release {
+	margin-top: 6%;
+	margin-bottom: 6%;
+	background-image: url('https://controlle-finance.herokuapp.com/static/images/undraw_product_iteration_kjok.svg');
+	background-repeat: no-repeat;
+	background-size: 350px 350px;
+	background-position: 50%;
+	height: 450px;
+}
+
+.release h1 {
+	text-align: center;
+	color: #2E2E2E;
+	font-size: 30px;
+}
+
+.bottom {
+	background-color: #f1f1f1;
+	border-top: 1px solid #000;
+	padding: 45px 30px;
+	margin-bottom: 0%;
 }
