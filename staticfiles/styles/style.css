@@ -45,7 +45,7 @@ html, body {
 .box {
 	margin-top: 6%;
 	margin-bottom: 6%;
-	background-image: url('images/undraw_online_payments_luau.svg'); background-repeat: no-repeat;
+	background-image: url('https://controlle-finance.herokuapp.com/static/images/undraw_online_payments_luau.svg'); background-repeat: no-repeat;
 	background-size: 450px 450px;
 	background-position: 95%;
 	height: 450px;
@@ -71,7 +71,7 @@ html, body {
 
 .background-img {
 	height: 450px;
-	background-image: url('images/bg.jpg');
+	background-image: url('https://controlle-finance.herokuapp.com/static/images/bg.jpg');
 	margin-bottom: 6%;
 	margin-top: 6%;
 	position: absolute;
