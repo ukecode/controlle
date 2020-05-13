@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
-from django.urls import reverse_lazy
+#from django.urls import reverse_lazy
 
 def paginaInicial(request):
     return render(request, 'core/home.html')
