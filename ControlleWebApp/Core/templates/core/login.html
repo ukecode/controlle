@@ -1,15 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Controlle - Login</title>
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
   </head>
   <body>
-    <form class="" action="" method="post">
-      {% csrf_token %}
-      <input type="text" name="username" value="">
-      <input type="password" name="password" value="">
-      <button type="submit" name="button">Entrar</button>
-    </form>
+    <div class="form-login">
+      <form class="" action="" method="post">
+        {% csrf_token %}
+        <div><input type="text" name="username" value=""></div>
+        <div><input type="password" name="password" value=""></div>
+        <div><button type="submit" name="button">Entrar</button></div>
+      </form>
+    </div>
   </body>
 </html>

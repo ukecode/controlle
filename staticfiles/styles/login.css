@@ -1,0 +1,33 @@
+html, body {
+    margin: 0 0;
+    padding: 0;
+    background-color: #F1FAEE;
+}
+
+.form-login {
+    background-color: #00A896;
+    padding: 10px 10px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+.form-login div {
+    margin: 10px;
+}
+
+.form-login input {
+    padding: 5px 5px;
+}
+
+.form-login button {
+    background: #457B9D;
+    padding: 8px 8px;
+    color: #FFFFFF;
+    font-family: Arial;
+    border: 1px solid #60665F;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    margin: 0 auto;
+}
