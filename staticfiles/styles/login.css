@@ -5,9 +5,8 @@ html, body {
 }
 
 .form-login {
-    background-color: #00A896;
+    width:200px;
     padding: 10px 10px;
-    width: 300px;
     margin: 0 auto;
     margin-top: 20%;
 }
@@ -17,7 +16,10 @@ html, body {
 }
 
 .form-login input {
+    background-color: #F1FAEE;
     padding: 5px 5px;
+    border: none;
+    border-bottom:1px solid #c3c3c3;
 }
 
 .form-login button {

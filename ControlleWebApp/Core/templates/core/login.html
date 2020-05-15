@@ -10,14 +10,6 @@
     <div class="form-login">
       <form class="" action="" method="post">
         {% csrf_token %}
-        
-
-
-        <!--
-          <div><input type="text" name="username" value=""></div>
-        <div><input type="password" name="password" value=""></div>
-        
-        -->
 
         <div>{{form.username}}</div>
         <div>{{form.password}}</div>
@@ -25,6 +17,8 @@
         {% for message in messages %}
           {{message}}
         {% endfor %}
+
+        
       </form>
     </div>
   </body>
