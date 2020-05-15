@@ -11,4 +11,4 @@ Um sistema completo para controlar contas a pagar e receber, e controlar seus ga
 - Opção de incluir categorias de despesas/receitas para melhor organização
 - Relatório de movimento por período, por categoria
 
-[https://controlle-finance.herokuapp.com/]
+[Acessar site](https://controlle-finance.herokuapp.com)
