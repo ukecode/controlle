@@ -9,5 +9,5 @@ class LoginForm(forms.ModelForm):
 		fields = ('username', 'password')
 		widgets = {
 			'username': forms.TextInput(attrs={'placeholder': 'Nome de Usuário'}),
-			'password': forms.TextInput(attrs={'placeholder': 'Senha do Usuário'}),
+			'password': forms.TextInput(attrs={'placeholder': 'Senha do Usuário', 'type': 'password'}),
 		}
