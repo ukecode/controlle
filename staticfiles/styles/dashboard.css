@@ -8,10 +8,14 @@ html, body {
 
 
 .entradas {
+	
+	margin:20px;
+}
+
+.entradas ul {
 	background-color: #fff;
 	border: 1px solid #f1f1f1;
 	border-radius: 10px;
-	padding: 10px 10px;
-	width:300px;
-	margin:20px;
+	padding: 20px 25px;
+	width:350px;
 }
