@@ -12,3 +12,5 @@ Um sistema completo para controlar contas a pagar e receber, e controlar seus ga
 - Relatório de movimento por período, por categoria
 
 [Acessar site](https://controlle-finance.herokuapp.com)
+
+### Lembrar-se de fazer git pull
