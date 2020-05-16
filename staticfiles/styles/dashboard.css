@@ -7,9 +7,11 @@ html, body {
 }
 
 
-div.entrada {
+.entradas {
 	background-color: #fff;
 	border: 1px solid #f1f1f1;
 	border-radius: 10px;
 	padding: 10px 10px;
+	width:300px;
+	margin:20px;
 }
