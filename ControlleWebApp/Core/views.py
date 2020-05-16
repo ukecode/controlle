@@ -4,6 +4,9 @@ from django.contrib import messages
 from .forms import LoginForm
 from django.contrib.auth import logout
 
+
+from .models import entradas, saidas
+
 def paginaInicial(request):
     return render(request, 'core/home.html')
 
@@ -27,8 +30,14 @@ def loginUsuario(request):
         return render(request, 'core/login.html', {'form': form})
 
 def painelUsuario(request):
-    return render(request, 'core/logged.html')
+    query_entradas = entradas.objects.all()
+    return render(request, 'core/logged.html', {'entradas': query_entradas})
+
+
+def visualizarEntradas(request):
+    pass 
 
 def logout_view(request):
     logout(request)
     return redirect('Core:login')
+

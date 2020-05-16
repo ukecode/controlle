@@ -1,11 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/dashboard.css' %}">
   </head>
   <body>
     <h1>{{ user.first_name }}</h1>
     <a href="{% url 'Core:logout' %}">Sair</a>
+
+
+    <div class="entradas">
+    	{% for entrada in entradas %}
+    	<ul>
+    		<li><strong>ORIGEM DE ENTRADA: </strong>{{ entrada.origem_entrada }}</li>
+    		<li><strong>VALOR: </strong> {{ entrada.valor }}</li>
+    		<li><strong>DATA: </strong> {{ entrada.data }}</li>
+    	</ul>
+    	{% endfor %}
+    </div>
+
   </body>
 </html>
