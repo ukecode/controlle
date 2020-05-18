@@ -22,7 +22,7 @@ def loginUsuario(request):
             return redirect('Core:dashboard_home')
 
         else:
-            messages.error(request, 'usuario ou senha invalido')
+            messages.error(request, 'Verifique seus dados.')
             return redirect('Core:login')
             
     else:

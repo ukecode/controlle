@@ -11,14 +11,14 @@
       <form class="" action="" method="post">
         {% csrf_token %}
 
+        {% for message in messages %}
+          <div id="msg">{{message}}</div>
+        {% endfor %}
+
         <div>{{form.username}}</div>
         <div>{{form.password}}</div>
         <div><button type="submit" name="button">Entrar</button></div>
-        {% for message in messages %}
-          {{message}}
-        {% endfor %}
 
-        
       </form>
     </div>
   </body>

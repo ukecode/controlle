@@ -33,3 +33,15 @@ html, body {
     cursor: pointer;
     margin: 0 auto;
 }
+
+#msg {
+    background-color:#f56d6d;
+    padding:7px 7px;
+    border-radius:5px;
+    border:1px solid #d86868;
+    color:#ffffff;
+    text-align:center;
+    font:normal 13px Arial;
+    font-weight:bold;
+  
+}
