@@ -4,6 +4,7 @@ from django.contrib import messages
 from .forms import LoginForm
 from django.contrib.auth import logout
 
+from django.contrib.auth.decorators import login_required
 
 from .models import entradas, saidas
 
@@ -29,6 +30,7 @@ def loginUsuario(request):
         form = LoginForm
         return render(request, 'core/login.html', {'form': form})
 
+@login_required()
 def painelUsuario(request):
     query_entradas = entradas.objects.all()
     return render(request, 'core/logged.html', {'entradas': query_entradas})
