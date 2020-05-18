@@ -19,5 +19,6 @@ Um sistema completo para controlar contas a pagar e receber, e controlar seus ga
 
 |FEATURE         | ATRIBUIÇÃO               |
 |----------------|--------------------------|
+|   feature/op03 | Banco de dados e modelos |
 |   feature/op05 | Design da aplicação      |
 |   feature/op08 | Segurança e autenticação |
