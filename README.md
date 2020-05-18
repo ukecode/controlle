@@ -1,4 +1,4 @@
-# Controlle
+# Controlle Finance
 ## **Aplicação para gerenciar gastos pessoais**
 
 [Acessar aplicação](https://controlle-finance.herokuapp.com/
