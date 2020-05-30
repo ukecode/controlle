@@ -22,7 +22,9 @@ class origemsRegistrosAdmin(admin.ModelAdmin):
     list_display = ['titulo']
 
 class entradasAdmin(admin.ModelAdmin):
-    list_display = ['valor', 'origem_entrada']
+    model = lancamentoConta
+    list_display = ['valor', 'origem_entrada', 'usuario']
+
 
 class saidasAdmin(admin.ModelAdmin):
     list_display = ['valor', 'origem_saida']
