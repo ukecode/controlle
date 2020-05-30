@@ -20,12 +20,12 @@ html, body {
 }
 
 
-.entradas {
-	
+.entradas, .saidas {
+
 	margin: 10px 0px;
 }
 
-.entradas ul {
+.entradas ul, .saidas ul {
 	background-color: #fff;
 	border: 1px solid #f1f1f1;
 	border-radius: 10px;
@@ -34,10 +34,15 @@ html, body {
 	list-style: none;
 }
 
-.entradas li {
+.entradas li, .saidas li {
 	padding: 5px;
 }
 
-.entradas ul a {
+.entradas ul a, .saidas ul a {
 	padding: 5px 5px;
+}
+
+.saidas {
+	float:right;
+	margin-top: -1%;
 }

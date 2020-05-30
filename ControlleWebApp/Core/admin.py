@@ -6,7 +6,7 @@ from .models import origemsRegistros
 
 class lancamentoContaAdmin(admin.ModelAdmin):
     list_display = ['valor', 'vencimento', 'forma_pagamento', 'tipo', 'status']
-   
+
     #fields = ['descricao', 'valor', 'vencimento', 'tipo', 'forma_pagamento', 'status']
 
     fieldsets = (
@@ -22,9 +22,7 @@ class origemsRegistrosAdmin(admin.ModelAdmin):
     list_display = ['titulo']
 
 class entradasAdmin(admin.ModelAdmin):
-    model = lancamentoConta
     list_display = ['valor', 'origem_entrada', 'usuario']
-
 
 class saidasAdmin(admin.ModelAdmin):
     list_display = ['valor', 'origem_saida']

@@ -25,21 +25,22 @@ def loginUsuario(request):
         else:
             messages.error(request, 'Verifique seus dados.')
             return redirect('Core:login')
-            
+
     else:
         form = LoginForm
         return render(request, 'core/login.html', {'form': form})
 
 @login_required()
 def painelUsuario(request):
-    query_entradas = entradas.objects.all()
-    return render(request, 'core/logged.html', {'entradas': query_entradas})
+    query_entradas = entradas.objects.filter(usuario=request.user)
+    query_saidas = saidas.objects.filter(usuario=request.user)
+    
+    return render(request, 'core/logged.html', {'entradas': query_entradas, 'saidas': query_saidas})
 
 
 def visualizarEntradas(request):
-    pass 
+    pass
 
 def logout_view(request):
     logout(request)
     return redirect('Core:login')
-
