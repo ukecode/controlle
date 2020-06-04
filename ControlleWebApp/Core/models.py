@@ -48,7 +48,6 @@ class entradas(models.Model):
 
     class Meta:
         verbose_name_plural = 'ENTRADAS'
-        unique_together = ('usuario',)
 
     def __str__(self):
         return '{}'.format(self.origem_entrada)
