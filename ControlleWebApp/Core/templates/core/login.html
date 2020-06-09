@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="{% static 'styles/login.css' %}">
   </head>
   <body>
-    <div class="form-login">
-      <form class="" action="" method="post">
-        {% csrf_token %}
 
-        {% for message in messages %}
-          <div id="msg">{{message}}</div>
-        {% endfor %}
+    <div class="box">
+      <div class="sp">
+        <span>Login</span>
+        <a href="#">Cadastro</a>
+      </div>
+      <div class="form-login">
+        <form class="" action="" method="post">
+          {% csrf_token %}
 
-        <div>{{form.username}}</div>
-        <div>{{form.password}}</div>
-        <div><button type="submit" name="button">Entrar</button></div>
+          {% for message in messages %}
+            <div id="msg">{{message}}</div>
+          {% endfor %}
 
-      </form>
+          <div>{{form.username}}</div>
+          <div>{{form.password}}</div>
+          <div><button type="submit" name="button">Entrar</button></div>
+
+        </form>
+      </div>
     </div>
+
   </body>
 </html>
