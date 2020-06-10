@@ -10,7 +10,7 @@ div.box {
     padding:5px 0px;
     margin:0 auto;
     width:320px;
-    margin-top:10%;
+    margin-top:14%;
     border:1px solid #ececec;
 }
 
@@ -54,4 +54,36 @@ div.box div.sp a{
     color:#5d5d5d;
     text-decoration:none;
 
+}
+
+div.form-login a#forget_pass {
+  color:#504f4f;
+  text-decoration:none;
+  margin-left:15%;
+}
+
+div#msg {
+    background-color:#de8282;
+    padding:15px 15px;
+    width:300px;
+    color:#fff;
+    font-family:Arial;
+    margin:0 37.4%;
+    text-align:center;
+    font-weight:bold;
+    border:1px solid #da7c7c;
+    border-radius:2px;
+
+    animation-name:box;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+    margin-top:-7%;
+    position:absolute;
+}
+
+@keyframes box {
+  0% {left:0px; top:0px;}
+  25% {left:0px; top:187px;}
+  50% {left:0px; top:187px;}
 }
