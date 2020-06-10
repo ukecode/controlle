@@ -60,6 +60,8 @@ div.form-login a#forget_pass {
   color:#504f4f;
   text-decoration:none;
   margin-left:15%;
+  font-family:Arial;
+  font-size:13px;
 }
 
 div#msg {
