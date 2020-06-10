@@ -37,7 +37,7 @@ def painelUsuario(request):
     query_saidas = saidas.objects.filter(usuario=request.user)
 
     get_aggregate_entradas = query_entradas.aggregate(Sum('valor'))
-    get_aggregate_saidas = query_entradas.aggregate(Sum('valor'))
+    get_aggregate_saidas = query_saidas.aggregate(Sum('valor'))
 
     sum_valor_entrada = get_aggregate_entradas['valor__sum']
     sum_valor_saida = get_aggregate_saidas['valor__sum']
