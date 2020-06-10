@@ -73,7 +73,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ControlleWebApp.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -124,10 +123,11 @@ LOGIN_URL = '/login/'
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, './staticfiles/'),)
 
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 STATIC_URL = "/staticfiles/"
+
 
 django_heroku.settings(locals())

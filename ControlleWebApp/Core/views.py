@@ -35,9 +35,7 @@ def painelUsuario(request):
     query_entradas = entradas.objects.filter(usuario=request.user)
     query_saidas = saidas.objects.filter(usuario=request.user)
 
-    calcular_saldo = query_entradas.in_bulk().get(1).valor
-
-    return render(request, 'core/logged.html', {'entradas': query_entradas, 'saidas': query_saidas, 'saldo': calcular_saldo})
+    return render(request, 'core/logged.html', {'entradas': query_entradas, 'saidas': query_saidas})
 
 
 def visualizarEntradas(request):
