@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
+from django.db.models import Sum
 from .forms import LoginForm
 from django.contrib.auth import logout
 
@@ -35,7 +36,21 @@ def painelUsuario(request):
     query_entradas = entradas.objects.filter(usuario=request.user)
     query_saidas = saidas.objects.filter(usuario=request.user)
 
-    return render(request, 'core/logged.html', {'entradas': query_entradas, 'saidas': query_saidas})
+    get_aggregate_entradas = query_entradas.aggregate(Sum('valor'))
+    get_aggregate_saidas = query_entradas.aggregate(Sum('valor'))
+
+    sum_valor_entrada = get_aggregate_entradas['valor__sum']
+    sum_valor_saida = get_aggregate_saidas['valor__sum']
+
+    saldo = sum_valor_entrada - sum_valor_saida
+
+    return render(request, 'core/logged.html', {
+        'entradas': query_entradas,
+        'saidas': query_saidas,
+        'sum_entrada': sum_valor_entrada,
+        'sum_saida': sum_valor_saida,
+        'saldo': saldo
+    })
 
 
 def visualizarEntradas(request):
