@@ -15,6 +15,10 @@ Um sistema completo para controlar contas a pagar e receber, e controlar seus ga
 - Relatório de movimento por período, por categoria
 
 
+[Acessar site](https://controlle-finance.herokuapp.com)
+
+### Lembrar-se de fazer git pull
+
 ### Features e suas atribuições no projeto
 
 |FEATURE         | ATRIBUIÇÃO               |
@@ -22,3 +26,4 @@ Um sistema completo para controlar contas a pagar e receber, e controlar seus ga
 |   feature/op03 | Banco de dados e modelos |
 |   feature/op05 | Design da aplicação      |
 |   feature/op08 | Segurança e autenticação |
+

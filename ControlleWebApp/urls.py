@@ -22,6 +22,6 @@ from django.conf.urls.static import static
 from ControlleWebApp.Core import views
 
 urlpatterns = [
-    path('', views.paginaInicial),
+    path('', include('ControlleWebApp.Core.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

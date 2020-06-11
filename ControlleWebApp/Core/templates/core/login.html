@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Controlle - Login</title>
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
+  </head>
+  <body>
+    <div class="form-login">
+      <form class="" action="" method="post">
+        {% csrf_token %}
+
+        {% for message in messages %}
+          <div id="msg">{{message}}</div>
+        {% endfor %}
+
+        <div>{{form.username}}</div>
+        <div>{{form.password}}</div>
+        <div><button type="submit" name="button">Entrar</button></div>
+
+      </form>
+    </div>
+  </body>
+</html>

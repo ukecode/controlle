@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/dashboard.css' %}">
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="content">
+        <h1>{{ user.first_name }}</h1>
+        <a href="{% url 'Core:logout' %}">Sair</a>
+      </div>
+    </div><!--header-->
+
+
+    <div class="content">
+
+      <div class="saidas">
+        <h2>Saídas</h2>
+      {% for saida in saidas %}
+      <ul>
+        <li><strong>ORIGEM DE SAÍDA: </strong>{{ saida.origem_entrada }}</li>
+        <li><strong>VALOR: </strong> {{ saida.valor }}</li>
+        <li><strong>DATA: </strong> {{ saida.data }}</li>
+
+        <a href="#" onclick="ent_edit()">Editar</a>
+        <a href="#" onclick="ent_delete()">Apagar</a>
+
+      </ul>
+
+      {% endfor %}
+      </div>
+
+      <div class="entradas">
+        <h2>Entradas</h2>
+      {% for entrada in entradas %}
+      <ul>
+        <li><strong>ORIGEM DE ENTRADA: </strong>{{ entrada.origem_entrada }}</li>
+        <li><strong>VALOR: </strong> {{ entrada.valor }}</li>
+        <li><strong>DATA: </strong> {{ entrada.data }}</li>
+
+        <a href="#" onclick="ent_edit()">Editar</a>
+        <a href="#" onclick="ent_delete()">Apagar</a>
+
+      </ul>
+
+      {% endfor %}
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      function ent_edit() {
+        alert('Editar')
+      }
+
+      function ent_delete() {
+        alert('Deletar')
+      }
+    </script>
+
+  </body>
+</html>
