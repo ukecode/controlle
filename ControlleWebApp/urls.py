@@ -24,4 +24,4 @@ from ControlleWebApp.Core import views
 urlpatterns = [
     path('', include('ControlleWebApp.Core.urls')),
     path('admin/', admin.site.urls),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

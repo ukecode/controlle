@@ -9,10 +9,15 @@
   <body>
 
     <div class="header">
+
       <div class="content">
-        <h1>{{ user.first_name }}</h1>
         <a href="{% url 'Core:logout' %}">Sair</a>
+        <h3 id="logo">ControlleFinance</h3>
+        <h3>Total de entradas: {{sum_entrada}}</h3>
+        <h3>Total de saídas: {{sum_saida}}</h3>
+        <h3>Saldo: {{saldo}}</h3>
       </div>
+
     </div><!--header-->
 
 
