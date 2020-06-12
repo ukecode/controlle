@@ -1,5 +1,8 @@
-# Controlle
+# Controlle Finance
 ## **Aplicação para gerenciar gastos pessoais**
+
+[Acessar aplicação](https://controlle-finance.herokuapp.com/
+)
 
 ### Controle de gastos
 Um sistema completo para controlar contas a pagar e receber, e controlar seus gastos pessoais.
@@ -11,6 +14,16 @@ Um sistema completo para controlar contas a pagar e receber, e controlar seus ga
 - Opção de incluir categorias de despesas/receitas para melhor organização
 - Relatório de movimento por período, por categoria
 
+
 [Acessar site](https://controlle-finance.herokuapp.com)
 
 ### Lembrar-se de fazer git pull
+
+### Features e suas atribuições no projeto
+
+|FEATURE         | ATRIBUIÇÃO               |
+|----------------|--------------------------|
+|   feature/op03 | Banco de dados e modelos |
+|   feature/op05 | Design da aplicação      |
+|   feature/op08 | Segurança e autenticação |
+
