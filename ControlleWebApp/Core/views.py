@@ -42,12 +42,15 @@ def painelUsuario(request):
     sum_valor_entrada = get_aggregate_entradas['valor__sum']
     sum_valor_saida = get_aggregate_saidas['valor__sum']
 
-    if query_entradas.count == 0:
-        sum_valor_entrada = 0
-    if query_saidas.count == 0:
-        sum_valor_saida = 0
+    try:
+        if query_entradas.count == 0:
+            sum_valor_entrada = 0
+        if query_saidas.count == 0:
+            sum_valor_saida = 0
 
-    saldo = sum_valor_entrada - sum_valor_saida
+        saldo = sum_valor_entrada - sum_valor_saida
+    except TypeError as e:
+        saldo = 0 + 0
 
     return render(request, 'core/logged.html', {
         'entradas': query_entradas,
