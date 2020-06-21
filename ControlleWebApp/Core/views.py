@@ -41,7 +41,10 @@ def painelUsuario(request):
 
     sum_valor_entrada = get_aggregate_entradas['valor__sum']
     sum_valor_saida = get_aggregate_saidas['valor__sum']
-
+    
+    if sum_valor_saida is null:
+        sum_valor_saida == 0
+    
     saldo = sum_valor_entrada - sum_valor_saida
 
     return render(request, 'core/logged.html', {
