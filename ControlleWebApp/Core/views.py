@@ -50,7 +50,7 @@ def painelUsuario(request):
 
         saldo = sum_valor_entrada - sum_valor_saida
     except TypeError as e:
-        saldo = 0 + 0
+        saldo = sum_valor_entrada + 0
 
     return render(request, 'core/logged.html', {
         'entradas': query_entradas,
