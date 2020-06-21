@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import django_heroku
+#import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -131,4 +131,4 @@ SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 STATIC_URL = "/staticfiles/"
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
