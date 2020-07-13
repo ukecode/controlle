@@ -1,55 +1,80 @@
 html, body {
-    margin: 0 0;
-
-    background-color: #f5f5f5;
+  margin: 0 0;
+  background-color: #f5f5f5;
 	font: normal 12px Arial;
 	color: #3a4a51;
 }
 
-.content {
-	margin: 0 auto;
-	width: 1200px;
-}
-
 .header {
-	margin:0 -10px;
-	background-color: #3179b3;
-	position:relative;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding:7px 5px 0px;
+  height:25px;
+
+}
+
+.header .dropdown {
+  float:right;
+  border-left:1px solid #f5f5f5;
+  padding:3px 35px;
+  font-weight:bold;
+  cursor: pointer;
+}
+
+.header .dropdown #ch{ margin-top:-6%; float:right; margin-right:-10%; }
+
+.sidemenu {
+  background-color: #ffffff;
+  padding: 5px 5px;
+  width:50px;
+  height:100%;
+  position:fixed;
+  top:0%;
+}
+
+.sidemenu ul li{
+  list-style: none;
+  margin:1000% -260%;
+}
+
+.content {
+  margin:4% 12%;
+}
+
+.content .classification {
+	float:right;
+	margin-top:-4%;
+	margin-right:-5%;
+}
+
+.content .classification select{
+	background-color:#ffffff;
 	padding:5px 5px;
-	border-bottom:1px solid #2b70a7;
+	width:100px;
+  border-radius:2px;
+}
+
+#block {
+	background-color:#ffffff;
+	padding:15px 25px 30px;
 	width:100%;
+	border-radius:4px;
+	border-color:1px solid #d4d4d4;
+	clear:both;
+	margin:25px 0;
+  font-weight: bold;
 }
 
-.header a {
-	float:right;
+#column{
+   height:25px;
+   width:120px;
+   float:left;
 }
 
-.header #logo h3 {
-	color: #00614C;
-}
-
-.entradas, .saidas {
-	margin: 10px 0px;
-}
-
-.entradas ul, .saidas ul {
-	background-color: #fff;
-	border: 1px solid #f1f1f1;
-	border-radius: 10px;
-	padding: 20px 25px;
-	width:350px;
-	list-style: none;
-}
-
-.entradas li, .saidas li {
-	padding: 5px;
-}
-
-.entradas ul a, .saidas ul a {
-	padding: 5px 5px;
-}
-
-.saidas {
-	float:right;
-	margin-top: -1%;
+#block .po{
+  float:right;
+  margin-top:-0.5%;
+  margin-right:-20px;
+  color:#8c8c8c;
+  cursor: pointer;
 }

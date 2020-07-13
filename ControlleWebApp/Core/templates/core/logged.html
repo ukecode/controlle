@@ -5,66 +5,107 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="{% static 'styles/dashboard.css' %}">
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
 
-    <div class="header">
+    <div  class="header">
 
-      <div class="content">
-        <a href="{% url 'Core:logout' %}">Sair</a>
-        <h3 id="logo">ControlleFinance</h3>
-        <h3>Total de entradas: {{sum_entrada}}</h3>
-        <h3>Total de saídas: {{sum_saida}}</h3>
-        <h3>Saldo: {{saldo}}</h3>
+      <div class="dropdown">
+
+          <span>Henrique</span>
+
+        <div id="ch">
+          <i data-feather="chevron-down" ></i>
+        </div>
+
+      </div>
+
+      <div class="dropdown_content">
+        <ul>
+          Configurações
+        </ul>
+        <ul><a href="{% url 'Core:logout' %}">Sair</a></ul>
       </div>
 
     </div><!--header-->
 
+    <div class="sidemenu">
+
+      <ul>
+        <li><a href="#"><i data-feather="home"></i></a></li>
+        <li><a href="#"><i data-feather="plus-circle"></i></a></li>
+        <li><a href="#"><i data-feather="list"></i></a></li>
+      </ul>
+
+    </div><!--sidemenu-->
 
     <div class="content">
-
-      <div class="saidas">
-        <h2>Saídas</h2>
-      {% for saida in saidas %}
-      <ul>
-        <li><strong>ORIGEM DE SAÍDA: </strong>{{ saida.origem_saida }}</li>
-        <li><strong>VALOR: </strong> {{ saida.valor }}</li>
-        <li><strong>DATA: </strong> {{ saida.data }}</li>
-
-        <a href="#" onclick="ent_edit()">Editar</a>
-        <a href="#" onclick="ent_delete()">Apagar</a>
-
-      </ul>
-
-      {% endfor %}
+      <h1>Dashboard</h1>
+      <div class="classification">
+        <span>Classificar por:</span>
+        <select class="class" name="">
+          <option value="ganhos">Ganhos</option>
+          <option value="gastos">Gastos</option>
+        </select>
       </div>
 
-      <div class="entradas">
-        <h2>Entradas</h2>
-      {% for entrada in entradas %}
-      <ul>
-        <li><strong>ORIGEM DE ENTRADA: </strong>{{ entrada.origem_entrada }}</li>
-        <li><strong>VALOR: </strong> {{ entrada.valor }}</li>
-        <li><strong>DATA: </strong> {{ entrada.data }}</li>
+      <div id="list_cf">
 
-        <a href="#" onclick="ent_edit()">Editar</a>
-        <a href="#" onclick="ent_delete()">Apagar</a>
+        <div id="block">
 
-      </ul>
+          <div id="column">R$200,00</div>
+          <div id="column">ALMOÇO</div>
+          <div id="column">DEBITO</div>
 
-      {% endfor %}
+          <div class="po">
+            <i data-feather="more-vertical"></i>
+          </div>
+
+        </div>
+
+        <div id="block">
+
+          <div id="column">R$200,00</div>
+          <div id="column">ALMOÇO</div>
+          <div id="column">DEBITO</div>
+
+          <div class="po">
+            <i data-feather="more-vertical"></i>
+          </div>
+
+        </div>
+
+        <div id="block">
+
+          <div id="column">R$200,00</div>
+          <div id="column">ALMOÇO</div>
+          <div id="column">DEBITO</div>
+
+          <div class="po">
+            <i data-feather="more-vertical"></i>
+          </div>
+
+        </div>
+
+        <div id="block">
+
+          <div id="column">R$200,00</div>
+          <div id="column">ALMOÇO</div>
+          <div id="column">DEBITO</div>
+
+          <div class="po">
+            <i data-feather="more-vertical"></i>
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
+    </div><!--content-->
 
-    <script type="text/javascript">
-      function ent_edit() {
-        alert('Editar')
-      }
-
-      function ent_delete() {
-        alert('Deletar')
-      }
+    <script>
+      feather.replace()
     </script>
 
   </body>
